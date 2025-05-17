@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio di Alexandro Simone Meloni</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Lazysizes for lazy loading images -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+            async
+        ></script>
+        <!-- Font Awesome for icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <h1>Portfolio di Alexandro Simone Meloni</h1>
+            <a
+                href="https://danzer-bit.github.io/Profilo/Homepage.html"
+                class="profile-link"
+            >
+                <button>Profilo</button>
+            </a>
+        </header>
+
+        <main>
+            <div class="gallery-container">
+                <div class="title-container">
+                    <h2 id="image-title">Design Project Title</h2>
+                </div>
+
+                <div class="main-image-container">
+                    <button
+                        class="nav-arrow prev-arrow"
+                        aria-label="Previous image"
+                    >
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="main-image-wrapper">
+                        <img
+                            id="main-image"
+                            src=""
+                            alt="Main gallery image"
+                            class="lazyload"
+                        />
+                    </div>
+
+                    <button
+                        class="nav-arrow next-arrow"
+                        aria-label="Next image"
+                    >
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="description-container">
+                    <p id="image-description">
+                        Detailed description of the design project will appear
+                        here.
+                    </p>
+                </div>
+
+                <div class="thumbnails-container">
+                    <!-- Thumbnails will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" />
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+            <button
+                class="lightbox-nav prev-lightbox"
+                aria-label="Previous image"
+            >
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav next-lightbox" aria-label="Next image">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <footer>
+            <p>
+                Puoi visualizzare alcune animazioni mostrate in questo portfolio
+                nel mio
+                <a
+                    href="https://alexfolio.vercel.app/Projects/VideoShowreel.html"
+                    target="_blank"
+                    >Video Showreel</a
+                >
+                e alcuni dei miei rilievi 3D sul mio profilo
+                <a href="https://sketchfab.com/Danzer" target="_blank"
+                    >Sketchfab</a
+                >.
+            </p>
+        </footer>
+
+        <script src="js/gallery.js"></script>
+    </body>
+</html>
